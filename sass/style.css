@@ -223,4 +223,8 @@ nav ul li:hover > a {
   font-size: 50px;
   font-weight: lighter;
 }
+
+footer ul {
+  list-style-type: none;
+}
 /*# sourceMappingURL=style.css.map */
