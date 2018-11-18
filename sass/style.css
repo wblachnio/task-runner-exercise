@@ -19,7 +19,7 @@
 
 /* variables*/
 /*extend*/
-.upper-white, nav ul li a {
+.upper-white, nav ul li a, .hero .slogan {
   color: #fff;
   text-transform: uppercase;
 }
@@ -187,8 +187,17 @@ nav ul li:hover > a {
 }
 
 .hero {
-  width: 100%;
-  background-color: skyblue;
-  text-align: center;
+  height: 500px;
+  background: url("https://img.wonderhowto.com/img/55/29/63571125583366/0/10-desk-hacks-thatll-help-you-get-more-done-work.w1456.jpg") 0/cover;
+}
+
+.hero .slogan {
+  float: left;
+  font-size: 50px;
+  width: 800px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px 240px 40px 40px;
+  margin-top: 150px;
+  font-weight: lighter;
 }
 /*# sourceMappingURL=style.css.map */
