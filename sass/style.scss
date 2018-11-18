@@ -25,6 +25,12 @@
 $font-white: #FFF;
 $navbar-grey: #313332;
 
+.box-shadow {
+    -webkit-boxshadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.38);
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.38);
+}
+
 /*extend*/
 
 .upper-white {
@@ -37,6 +43,27 @@ $navbar-grey: #313332;
     font-weight: bolder;
 }
 
+.text-shadow {
+    text-shadow: 3px 3px 5px rgba(150, 150, 150, 1);
+
+}
+
+.box-shadow {
+    -webkit-boxshadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.38);
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.38);
+}
+
+.background-slogan {
+    background: rgba(106, 107, 107, 1);
+    background: -moz-linear-gradient(left, rgba(106, 107, 107, 1) 0%, rgba(87, 87, 87, 0.74) 41%, rgba(84, 86, 87, 0.37) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(106, 107, 107, 1)), color-stop(41%, rgba(87, 87, 87, 0.74)), color-stop(100%, rgba(84, 86, 87, 0.37)));
+    background: -webkit-linear-gradient(left, rgba(106, 107, 107, 1) 0%, rgba(87, 87, 87, 0.74) 41%, rgba(84, 86, 87, 0.37) 100%);
+    background: -o-linear-gradient(left, rgba(106, 107, 107, 1) 0%, rgba(87, 87, 87, 0.74) 41%, rgba(84, 86, 87, 0.37) 100%);
+    background: -ms-linear-gradient(left, rgba(106, 107, 107, 1) 0%, rgba(87, 87, 87, 0.74) 41%, rgba(84, 86, 87, 0.37) 100%);
+    background: linear-gradient(to right, rgba(106, 107, 107, 1) 0%, rgba(87, 87, 87, 0.74) 41%, rgba(84, 86, 87, 0.37) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6a6b6b', endColorstr='#545657', GradientType=1);
+}
 
 @for $i from 1 through 12 {
     .col-#{$i} {
@@ -70,6 +97,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1;
+    @extend .box-shadow;
 
     &::after {
         content: "";
@@ -81,7 +109,7 @@ nav {
         list-style-type: none;
         padding: 0;
         margin: 0;
-        float: right;
+        float: left;
 
         li {
             font-size: 16px;
@@ -115,18 +143,22 @@ nav {
 
 .hero {
     height: 500px;
-    background: url('https://img.wonderhowto.com/img/55/29/63571125583366/0/10-desk-hacks-thatll-help-you-get-more-done-work.w1456.jpg') 0/cover;
-
+    @extend .background-slogan;
+    @extend .box-shadow;
 
     .slogan {
         float: left;
-        font-size: 50px;
         width: 800px;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(27, 27, 27, 0.8);
         padding: 40px 240px 40px 40px;
         margin-top: 150px;
+        font-size: 50px;
         font-weight: lighter;
         @extend .upper-white;
+        @extend .box-shadow;
+        @extend .text-shadow;
+
 
     }
+
 }

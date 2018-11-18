@@ -18,6 +18,12 @@
 }
 
 /* variables*/
+.box-shadow, nav, .hero, .hero .slogan {
+  -webkit-boxshadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.38);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.38);
+}
+
 /*extend*/
 .upper-white, nav ul li a, .hero .slogan {
   color: #fff;
@@ -27,6 +33,24 @@
 .quick-bolder {
   font-family: quicksand;
   font-weight: bolder;
+}
+
+.text-shadow, .hero .slogan {
+  text-shadow: 3px 3px 5px #969696;
+}
+
+.box-shadow, nav, .hero, .hero .slogan {
+  -webkit-boxshadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.38);
+          box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.38);
+}
+
+.background-slogan, .hero {
+  background: #6a6b6b;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #6a6b6b), color-stop(41%, rgba(87, 87, 87, 0.74)), color-stop(100%, rgba(84, 86, 87, 0.37)));
+  background: -webkit-gradient(linear, left top, right top, from(#6a6b6b), color-stop(41%, rgba(87, 87, 87, 0.74)), to(rgba(84, 86, 87, 0.37)));
+  background: linear-gradient(to right, #6a6b6b 0%, rgba(87, 87, 87, 0.74) 41%, rgba(84, 86, 87, 0.37) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6a6b6b', endColorstr='#545657', GradientType=1);
 }
 
 .col-1 {
@@ -157,7 +181,7 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  float: right;
+  float: left;
 }
 
 nav ul li {
@@ -188,16 +212,15 @@ nav ul li:hover > a {
 
 .hero {
   height: 500px;
-  background: url("https://img.wonderhowto.com/img/55/29/63571125583366/0/10-desk-hacks-thatll-help-you-get-more-done-work.w1456.jpg") 0/cover;
 }
 
 .hero .slogan {
   float: left;
-  font-size: 50px;
   width: 800px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(27, 27, 27, 0.8);
   padding: 40px 240px 40px 40px;
   margin-top: 150px;
+  font-size: 50px;
   font-weight: lighter;
 }
 /*# sourceMappingURL=style.css.map */
