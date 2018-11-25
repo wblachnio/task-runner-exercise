@@ -89,3 +89,5 @@ nav ul li:hover > a { background-color: #484848; color: #12CBC4; }
 .hero .slogan { float: left; width: 800px; background: rgba(27, 27, 27, 0.8); padding: 40px 240px 40px 40px; margin-top: 150px; font-size: 50px; font-weight: lighter; }
 
 footer ul { list-style-type: none; }
+
+.test { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
