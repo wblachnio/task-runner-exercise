@@ -20,7 +20,7 @@
     "watch": "npm-run-all build -p watch:*",
     "watch:browsersync": "browser-sync start --server --files css/*.css *.html",
     "watch:sassprefixer": "onchange sass/*.scss -- npm-run-all sassprefixer:*",
-    "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "sassprefixer:sass": "node-sass scss/style.scss css/style.css -w",
     "sassprefixer:sass": "autoprefixer-cli  css/style.css"
   },
   "repository": {
